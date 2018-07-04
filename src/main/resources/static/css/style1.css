@@ -1,0 +1,306 @@
+/*design for text menu  */
+.shop_header_area .navbar .navbar-nav .textsiz {
+    font-size: 10px;
+    margin-top: 250px;
+    padding-top: 350px;
+    color: rgb(100, 100, 214);
+  }
+#maindiv {
+    border: 1px solid black;
+    margin-left: 10%;
+    min-height: 400px;
+    margin-right: 10%;
+
+}
+
+
+/* back to index page */
+#icoback li{
+    display: inline;
+    padding: 10px;
+}
+/* end it  */
+
+
+button {
+    margin-top: 10px;
+}
+.cls45 {
+    background-color: rgba(240, 238, 238, 0.945);
+    width: 95%;
+    font-size: 18px;
+    text-align: left;
+    color:rgb(69, 69, 211);
+    padding-top: 10px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#bttn45:hover {
+    color: red;
+    text-decoration: underline;
+}
+#btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+#frm {
+     
+    display: none;
+    margin-top:20px;
+    top: 200px;
+    min-height: 200px;
+    background-color:white;
+    margin-left: 40px;
+}
+#frm  input {
+  width: 80%;
+  padding: 10px;
+  margin: 0px auto;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border: 1px;
+  background-color: silver;
+}
+
+#frm  select {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: silver;
+  }
+  #frm  label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+  }
+
+ /* start of change email design */
+ #chng1 {
+    background-color: black;
+    color: white;
+}
+ 
+  #bttn46:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+  #frm22 {   
+    display: none;
+    margin-top:20px;
+    top: 200px;
+    min-height: 300px;
+    background-color:white;
+    margin-left: 40px;
+}
+#frm22  input {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px;
+    background-color: silver;
+  }
+  #frm22  label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#eml,#res {
+    background-color: silver;
+}
+/* end of change email */
+
+/* strt of change password */
+  #bttn47:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#frm33 {   
+    display: none;
+    margin-top:20px;
+    top: 200px;
+    min-height: 300px;
+    background-color:white;
+    margin-left: 40px;
+}
+
+#frm33  input {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px;
+    background-color: rgb(148, 138, 138);
+
+  }
+
+  #frm33  label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#pswd {
+    background-color: silver;
+}
+
+#chng2 {
+    background-color: black;
+    color: white;
+}
+/* end of change password */
+
+/* delete acount strt */
+  #bttn48:hover {
+    color: red;
+    text-decoration: underline;
+}
+#frm43 {   
+    display: none;
+    margin-top:20px;
+    top: 200px;
+    min-height: 300px;
+    background-color:white;
+    margin-left: 40px;
+}
+
+#chng3 {
+    background-color: black;
+    color: white;
+}
+
+#frm43  input {
+    width: 60%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px;
+
+  }
+  /* fdback design */
+
+#fdback {
+    width: auto;;
+    height: auto;
+    background-color:white;
+    border: 1px solid  #cccccc;
+    min-height: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+  #frm_fdback {
+       min-height: 500px;
+       /* background-color: aquamarine; */
+       margin-left: 50px;
+       margin-right: 50px;
+       border-radius: 5px;
+       margin-top: 15px;
+    
+  }
+
+  #frm_fdback label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+  }
+  
+   
+  
+  #fdbttn {
+      width: 90%;
+      border-radius: 5px;
+      margin-top: 10px;
+      padding: 10px;
+  }
+
+
+  textarea {
+      width: 90%;
+      border-radius: 5px;
+      margin-top: 10px;
+    
+  }
+
+  #subbttn {
+      width: 90%;
+      border-radius: 5px;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+  }
+
+
+/* end of fdback design */
+#a22 {
+    position: relative;
+}
+#mainform2 {
+    width: auto;
+    height: auto;
+    position: fixed;
+}
+
+
+
+/* start of chat  */
+
+.main-cont22 {
+    margin-top: 5px;
+    top: 100px;
+    width: 1200px;
+    margin-left: 50px;
+
+  
+}
+#menu22 ul li {
+    display: inline;
+    padding: 20px;
+    margin: 5px 10px 5px 10px;
+    font: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    font-size: 25px;
+    padding-top: 20px;
+    
+    
+    
+}
+
+#menu22 ul li:hover {
+color: red;
+border-radius: 5px;
+box-shadow: #1b9c3b;
+
+}
+
+#chat22 {
+    width: auto;
+    height: auto;
+    min-height: 500px;
+    min-width: 500px;
+    background-color:white;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+/* end of the chat  */

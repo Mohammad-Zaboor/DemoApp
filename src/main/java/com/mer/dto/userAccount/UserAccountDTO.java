@@ -1,15 +1,22 @@
 package com.mer.dto.userAccount;
 
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.mer.dto.item.ItemDTO;
 
 @Entity
 @Table(name="userAccountTable")
@@ -30,8 +37,12 @@ public class UserAccountDTO
 	private String userPassword;
 	private String confirmPassword;
 	private boolean acceptLisence;
+	private boolean status;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date userRegisterDate;
+	@OneToMany()
+	@JoinColumn(name="ownerId")
+	private List<ItemDTO> item;
 	
 	public UserAccountDTO() {
 		System.out.println("useraccountDTO created");
@@ -39,7 +50,7 @@ public class UserAccountDTO
 
 	public UserAccountDTO(int id, String userFirstName, String userLastName, @NotNull String provice, String userEmail,
 			long userPhoneNumber, String userAddress, @NotNull String userPassword, String confirmPassword,
-			boolean acceptLisence, Date userRegisterDate) {
+			boolean acceptLisence, boolean status, Date userRegisterDate, List<ItemDTO> item) {
 		super();
 		this.id = id;
 		this.userFirstName = userFirstName;
@@ -51,7 +62,9 @@ public class UserAccountDTO
 		this.userPassword = userPassword;
 		this.confirmPassword = confirmPassword;
 		this.acceptLisence = acceptLisence;
+		this.status = status;
 		this.userRegisterDate = userRegisterDate;
+		this.item = item;
 	}
 
 	public int getId() {
@@ -134,6 +147,14 @@ public class UserAccountDTO
 		this.acceptLisence = acceptLisence;
 	}
 
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
 	public Date getUserRegisterDate() {
 		return userRegisterDate;
 	}
@@ -142,13 +163,15 @@ public class UserAccountDTO
 		this.userRegisterDate = userRegisterDate;
 	}
 
-	@Override
-	public String toString() {
-		return "UserAccountDTO [id=" + id + ", userFirstName=" + userFirstName + ", userLastName=" + userLastName
-				+ ", provice=" + provice + ", userEmail=" + userEmail + ", userPhoneNumber=" + userPhoneNumber
-				+ ", userAddress=" + userAddress + ", userPassword=" + userPassword + ", confirmPassword="
-				+ confirmPassword + ", acceptLisence=" + acceptLisence + ", userRegisterDate=" + userRegisterDate + "]";
+	public List<ItemDTO> getItem() {
+		return item;
 	}
+
+	public void setItem(List<ItemDTO> item) {
+		this.item = item;
+	}
+
+	
 
 	
 	

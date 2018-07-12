@@ -1,8 +1,0 @@
-package com.mer.service.items.electronics;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class ElectronicsService {
-
-}

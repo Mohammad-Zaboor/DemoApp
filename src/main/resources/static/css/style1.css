@@ -8,11 +8,109 @@
 #maindiv {
     border: 1px solid black;
     margin-left: 10%;
-    min-height: 400px;
+    min-height: 500px;
     margin-right: 10%;
+    margin-bottom: 100px;
+    margin-top: 20px;
 
 }
 
+/* login form */
+#rgsfrmzab {
+    display: none;
+}
+#registerdiv {
+    margin-bottom: 15%;
+    margin-top: 0%;
+    padding-bottom: 20px;
+}
+.registerhover:hover {
+    background-color:blue;
+    color: white;
+    opacity: 0.5;
+    pointer-events: stroke;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+#registerhover:hover {
+    background-color:blue;
+    color: white;
+    opacity: 0.5;
+    pointer-events: stroke;
+    padding: 2px 2px 2px 2px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+#forgotpswd {
+    float: right;
+}
+
+#nameusername {
+    padding: 10px 15px 10px 15px;
+    margin: 10px 5px 20px 20px;
+    width:100%;
+    min-block-size: 40%;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-shadow: gainsboro;
+    opacity: 0.8;
+    box-shadow: grey;
+    
+}
+#nameusername:focus {
+    background-color: azure;
+    border-color:blue;
+    opacity: 0.7;
+box-shadow: #9c9292;
+}
+#btnh1 {
+ width: 100%;
+ min-block-size: 40%;
+ height: 6%;
+ background-color: #f5e4e4;
+ margin-left: 0%;
+ margin-right: 0%;
+ padding: 10px 15px 10px 15px;
+ border-radius: 10px;
+ text-align: center;
+
+ 
+}
+#loginbtn {
+    padding: 10px 15px 10px 15px;
+    width: auto;
+    text-align: center;
+    height: auto;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    overflow:visible;  
+}
+#loginbtn:hover {
+    color: white;
+    lighting-color: seashell;
+    opacity: 0.5;
+}
+
+#maindiv12 {
+    border: 1px solid #9c9292 azure;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    background-color: #f8f5f5;
+    text-align: center;
+}
+.footer_area {
+    margin-top: 10%;
+}
+
+  
 
 /* back to index page */
 #icoback li{
@@ -20,6 +118,7 @@
     padding: 10px;
 }
 /* end it  */
+
 
 
 button {
@@ -48,6 +147,7 @@ button {
     background-color: black;
     color: white;
     font-size: 18px;
+    width: 50%
 }
 #frm {
      
@@ -65,8 +165,8 @@ button {
   border-radius: 5px;
   margin-top: 5px;
   margin-left: 10px;
-  border: 1px;
-  background-color: silver;
+  border: 1px solid black;
+  background-color:white;
 }
 
 #frm  select {
@@ -75,9 +175,9 @@ button {
     margin: 0px auto;
     margin-top: 10px;
     margin-left: 10px;
-    border: 1px;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: silver;
+    background-color:white;
   }
   #frm  label {
       font-family: Arial, Helvetica, sans-serif;
@@ -110,8 +210,8 @@ button {
     border-radius: 5px;
     margin-top: 5px;
     margin-left: 10px;
-    border: 1px;
-    background-color: silver;
+    border: 1px solid black;
+    background-color: white;
   }
   #frm22  label {
     font-family: Arial, Helvetica, sans-serif;
@@ -145,8 +245,8 @@ button {
     border-radius: 5px;
     margin-top: 5px;
     margin-left: 10px;
-    border: 1px;
-    background-color: rgb(148, 138, 138);
+    border: 1px solid black;
+    background-color: white;
 
   }
 
@@ -192,6 +292,7 @@ button {
     margin-top: 5px;
     margin-left: 10px;
     border: 1px;
+    border: 1px solid black;
 
   }
   /* fdback design */
@@ -201,9 +302,11 @@ button {
     height: auto;
     background-color:white;
     border: 1px solid  #cccccc;
-    min-height: 60%;
+    min-height: 70%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 100px;
+    margin-top: 20px;
 
 }
 
@@ -213,7 +316,9 @@ button {
        margin-left: 50px;
        margin-right: 50px;
        border-radius: 5px;
-       margin-top: 15px;
+       margin-top: 25px;
+       margin-bottom: 10px;
+
     
   }
 
@@ -222,16 +327,12 @@ button {
     font-size: 20px;
 
   }
-  
-   
-  
   #fdbttn {
       width: 90%;
       border-radius: 5px;
       margin-top: 10px;
       padding: 10px;
   }
-
 
   textarea {
       width: 90%;

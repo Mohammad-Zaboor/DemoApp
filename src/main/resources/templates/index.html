@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,6 @@
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Persuit</title>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="/ajax/ajax.js" type="text/javascript"></script>
 
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -38,144 +35,15 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-         <style>
-                body {font-family: Arial, Helvetica, sans-serif;}
-                
-                /* Full-width input fields */
-                input[type=text] {
-                    width: 100%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    display: inline-block;
-                    border: 1px solid #ccc;
-                    box-sizing: border-box;
-                    border-radius: 5px;
-                }
-                
-                /* Set a style for all buttons */
-                button {
-                    background-color: black;
-                    color: white;
-                    padding: 14px 20px;
-                    margin: 8px 0;
-                    border: none;
-                    cursor: pointer;
-                    width: 100%;
-                    text-align: center;
-                    font-size: 20px;
-                    border-radius: 5px;
-                }
-                .forgot {
-                    margin-top: 0px;
-                    padding-top: 10px
-                }
-                button:hover {
-                    opacity: 0.8;
-                }
-                
-                /* Center the image and position the close button */
-                .imgcontainer {
-                    text-align: center;
-                    margin: 24px 0 12px 0;
-                    position: relative;
-                }
-                
-                img.avatar {
-                    width: 40%;
-                    border-radius: 50%;
-                }
-                
-                .container {
-                    padding: 16px;
-                }
-                
-                /* The Modal (background) */
-                .modal {
-                    display: none; /* Hidden by default */
-                    position: fixed; /* Stay in place */
-                    z-index: 1; /* Sit on top */
-                    left: 0;
-                    top: 0;
-                    width: 100%; /* Full width */
-                    height: 100%; /* Full height */
-                    overflow: auto; /* Enable scroll if needed */
-                    background-color: rgb(0,0,0); /* Fallback color */
-                    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                    padding-top: 20px;
-                
-                }
-                
-                /* Modal Content/Box */
-                .modal-content {
-                    background-color: gray;
-                    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-                    border: 1px solid #888;
-                    width: 50%; /* Could be more or less, depending on screen size */
-                }
-                
-                /* The Close Button (x) */
-                .close {
-                    position: absolute;
-                    right: 25px;
-                    top: 0;
-                    color: #000;
-                    font-size: 35px;
-                    font-weight: bold;
-                }
-                modal form1 {
-                max-width:300px;
-                min-width:250px;
-                padding:10px 50px;
-                border:2px solid gray;
-                border-radius:10px;
-                font-family:raleway;
-                background-color:#fff
-                }
-                
-                .close:hover,
-                .close:focus {
-                    color: red;
-                    cursor: pointer;
-                }
-                
-                /* Add Zoom Animation */
-                .animate {
-                    -webkit-animation: animatezoom 0.6s;
-                    animation: animatezoom 0.6s
-                }
-                
-                @-webkit-keyframes animatezoom {
-                    from {-webkit-transform: scale(0)} 
-                    to {-webkit-transform: scale(1)}
-                }
-                    
-                @keyframes animatezoom {
-                    from {transform: scale(0)} 
-                    to {transform: scale(1)}
-                }
-                
-                /* Change styles for span and cancel button on extra small screens */
-                @media screen and (max-width: 300px) {
-                    span.psw {
-                       display: block;
-                       float: none;
-                    }
-                    .cancelbtn {
-                       width: 100%;
-                    }
-                }
-                </style>
-                <script>
-                        // Get the modal
-                        var modal = document.getElementById('id01');
-                        
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                            if (event.target == modal) {
-                                modal.style.display = "none";
-                            }
-                        }
-                        </script>
+       
+          
+    
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+
+        <link rel="stylesheet" href="css/style1.css" type="text/css">  
+        <link rel="stylesheet" href="cc/bootstrap.min.css" type="text/css">
+    
     </head>
     <body>
         
@@ -184,8 +52,14 @@
             <div class="carousel_top_header row m0">
                 <div class="container">
                     <div class="carousel_top_h_inner">
-                        <div class="float-md-left">
+                            <div style="float:left;margin: 15px;font: 20px;">
+                                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                       <span class="navbar-toggler-icon"></span>
+                               </div>
+                        <div class="float-md" style="margin: 10px;padding-top: 15px;">
                             <div class="top_header_left">
+                            
                                 <div class="selector">
                                     <select class="language_drop" name="countries" id="countries" style="width:300px;">
                                       <option value='yt' data-image="img/icon/flag-1.png" data-imagecss="flag yt" data-title="English">English</option>
@@ -194,168 +68,154 @@
                                       <option value='yu' data-image="img/icon/flag-1.png" data-imagecss="flag yu" data-title="Bangladesh">Bangla</option>
                                     </select>
                                 </div>
-                                <select class="selectpicker usd_select">
-                                    <option>USD</option>
-                                    <option>$</option>
-                                    <option>$</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="float-md-right">
-                            <div class="top_header_middle">
-                                <a href="#"><i class="fa fa-phone"></i> Call Us: <span>+84 987 654 321</span></a>
+                            <div class="float-md-right" style="margin:2px;padding-top: 0px;">
+                                 <div class="top_header_middle">
+                                     <a href="#"><i class="fa fa-phone"></i> Call Us: <span>+84 987 654 321</span></a>
                                 <a href="#"><i class="fa fa-envelope"></i> Email: <span>support@yourdomain.com</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel_menu_inner">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-							
-                       
-                    </nav>
-                    
-                </div>
-            </div>
-            
+          
         </header>
         <!--================End Menu Area =================-->
-        
-        <!--================Categories Banner Area =================-->
      
-        <!--================End Categories Banner Area =================-->
+            <div id="maindiv12">
+               <div id="logfrm" >
+                   <h1 style="margin-left: 1px; float: left;margin-top: 2.5%;margin-bottom: 2.5%;">Login in</h1>
+                   <form>
+                      
+                      <input type="text" id="nameusername" name="name" placeholder="Name" ><br>
+
+                      <input type="text" id="nameusername" name="username" placeholder="username"><br>
+                     <h5 id="btnh1"><input type="button" value="Log In" id="loginbtn"></h5>  
+
+                   </form>
+               </div>
+
+               <!--================start of forgot password Area =================--> 
+                <!--================index of js code is in contact.js and from css code is style.css related code of forgot password code =================--> 
+                          <div id="forgotpswd">        
+                         <h4  class="headtag" id="registerhover" onclick="document.getElementById('id01').style.display='block'" style="width:100%;font-size: 15px; float: right; margin-top: 2%;padding: 5px 10px 5px 10px;">Forgot password ?</h4>
+                                
+                                <div id="id01" class="modal">
+                                  <form class="modal-content animate" id="form1">
+                                    <div class="imgcontainer">
+                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    </div>
+                                    <div class="container">
+                                      <input type="text" placeholder="Enter Resource email" name="uname" required>
+                                      <button type="submit" class="submit">change</button>
+                                     
+                                    </div>
+                                 </form>
+                               </div>   
+
+                            </div>     
+                        
+                         <div id="registerdiv">
+                            <h5 id="Registerfrmzab" class="registerhover" style="margin-left: 1%; color: red; opacity: 0.5; margin-top: 1%; position: absolute; padding-right: 3%; float: left;margin-bottom:20px;">Register?</h5>
+                            <form id="rgsfrmzab">
+                                     <h4  style=" margin-top: 10%; float: left;margin-bottom: 3%;margin-left: 1%;">please register yourself now</h4>
+                                    <input type="text" id="nameusername" name="Name" placeholder="Name"><br>
+                                    <input type="email" id="nameusername" name="email" placeholder="Email"><br>
+                                    <input type="text" id="nameusername" name="User name" placeholder="User Name"><br>
+                                    <input type="text" id="nameusername" name="Phone No" placeholder="Phone No"><br>
+                                    <input type="password" id="nameusername" name="password" placeholder="Password"><br>
+                                    <input type="password" id="nameusername" name="confrim password" placeholder="confirm password"><br>
+                                   
+                                    <h5 id="btnh1"><input type="button" id="loginbtn" value="Register"></h5>
+
+                            </form>
+                        </div>
+                      
+
+            </div> 
+ 
+
+
+
+
         
-        <!--================login Area =================-->
-   					
-   					     <section class="login_area p_100">
+  
+        <!-- ================login Area =================-->
+        <!-- <section class="login_area p_100">
             <div class="container">
                 <div class="login_inner">
-                      <h3 style="color: red; font-size: 16px;">
-                                        <span th:text="${message}"></span>
-                                                                                    </h3>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" style="width: 1000px;">
                             <div class="login_title">
-                              
-                                <h2>log in your account</h2>
-                                <p>Log in to your account to make use of our great services.</p>
+                                <h2>log in </h2>
                             </div>
-                            <form class="login_form row" action="/userLogin" method="post">
+                            <form class="login_form row" id="bordercolorzab">
                                 <div class="col-lg-12 form-group">
-                                    <input class="form-control" type="text" placeholder="User Phone" name="userPhone">
+                                    <input class="form-control" type="text" placeholder="Name" >
                                 </div>
                                 <div class="col-lg-12 form-group">
-                                    <input class="form-control" type="password" placeholder="Password" name="userPassword">
-                                </div>
-                                <div class="col-lg-12 form-group">
-                                    <button type="submit" value="submit" class="btn update_btn form-control">Login</button>
-                                </div>
-            					<div  id="forgotPasswordResult" style="color: red; font-size: 16px;">  </div>
-                            </form>
-                                                              <div class="col-lg-12 form-group">
-                        <h4 onclick="document.getElementById('id01').style.display='block'" style="width:100%;font-size: 14px;color: red;">Forgot your password ?</h4>
-
-                    <div id="id01" class="modal">
-                            <form class="modal-content animate" id="forgotMyPassword">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <input class="form-control" type="text" placeholder="User Name">
                                 </div>
 
-                                <div class="container">
-                                    <input type="text" placeholder="Enter Resource email" id="userEmail2" required>
-                                    <button type="submit">Submit</button>
-     							</div>
-                                </div>
+                                <div class="col-lg-12 form-group">
+                                        <button type="submit" value="submit" class="btn update_btn form-control">Login</button>
+                                 </div>   
                             </form>
-                    </div>
                         </div>
-                        
-                        <div class="col-lg-8">
+                        -->
+                         <!-- <div class="col-lg-8">
                             <div class="login_title">
-                                <h2>create account</h2>
-                                <p>Follow the steps below to create email account enjoy the great mail.com emailing experience. Vivamus tempus risus vel felis condimentum, non vehicula est iaculis.</p>
+                                <h2 id="crtaccount">Register</h2> 
                             </div>
-                            <form class="login_form row" id="regesterationForm">
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="text" id="userFirstName" placeholder="First Name" required="required">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="email" id="userEmail" placeholder="Email">
-                                </div>
-                             
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="text" id="userLastName" placeholder="Last Name">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="number" data-validation="number"  id="userPhoneNumber" placeholder="Phone Number" required="required">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="password" id="userPassword" placeholder="Password" required="required">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input class="form-control" type="text" id="userAddress" placeholder="Your Address" required="required">
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                        <div class="form-group">
-                                            <select class="form-control" id="provice" required="required">
-                                                <option>Select City</option>
-                                                <option value="kabul">kabul</option>
-                                                <option value="balkh">balkh</option>
-                                                <option value="herat">herat</option>
-                                                <option value="kandahar">kandahar</option>
-                                                <option value="jalalabad">jalalabad</option>
-                                                <option value="baghlan">baghlan</option>
-                                                <option value="parwan">parwan</option>
-                                                <option value="badakhsan">badakhshan</option>
-                                                <option value="badghis">badghis</option>
-                                                <option value="bamyan">bamyan</option>
-                                                <option value="daykundi">daykundi</option>
-                                                <option value="farah">farah</option>
-                                                <option value="faryab">faryab</option>
-                                                <option value="ghazni">ghazni</option>
-                                                <option value="ghor">ghor</option>
-                                                <option value="helmand">helmand</option>
-                                                <option value="jowzjan">jowzjan</option>
-                                                <option value="kapisa">kapisa</option>
-                                                <option value="khost">Khost</option>
-                                                <option value="kunar">kunar</option>
-                                                <option value="kunduz">kunduz</option>
-                                                <option value="laghman">laghman</option>
-                                                <option value="logar">logar</option>
-                                                <option value="maidan wardak">maidan wardak</option>
-                                                <option value="nimruz">numruz</option>
-                                                <option value="nuristan">nuristan</option>
-                                                <option value="paktia">paktia</option>
-                                                <option value="paktika">paktika</option>
-                                                <option value="panjshir">panjshir</option>
-                                                <option value="samangan">samangan</option>
-                                                <option value="sare pol">sare pol</option>
-                                                <option value="takhar">takhar</option>
-                                                <option value="urozgan">urozgan</option>
-                                                <option value="zabul">zabul</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                   
+                            <form class="login_form row" id="creataccountform">
                                     
-                                <div class="col-lg-6 form-group">
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="text" placeholder="Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="email" placeholder="Email">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="text" placeholder="User Name">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="text" placeholder="Phone">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="password" placeholder="Password">
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input class="form-control" type="password" placeholder="Re-Password">
+                                </div>
+                                <div class="col-lg-12 form-group">
                                     <button type="submit" value="submit" class="btn subs_btn form-control">register now</button>
                                 </div>
                             </form>
-                            <div  id="postResult" style="color: red; font-size: 16px;">  </div>
-                        </div>
+                        </div> -->
+                          <!--================start of forgot password Area =================--> 
+                          <!--================index of js code is in contact.js and from css code is style.css related code of forgot password code =================-->           
+                          <!-- <h4 class="headtag" onclick="document.getElementById('id01').style.display='block'" style="width:100%;font-size: 15px;margin-left: 60%;margin-top: 10%;padding: 5px 10px 5px 10px;">Forgot password ?</h4>
+                                
+                                <div id="id01" class="modal">
+                                  <form class="modal-content animate" id="form1">
+                                    <div class="imgcontainer">
+                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    </div>
+                                    <div class="container">
+                                      <input type="text" placeholder="Enter Resource email" name="uname" required>
+                                      <button type="submit" class="submit">change</button>
+                                     
+                                    </div>
+                                </form>
+                               </div>   
+                        </div> 
+                         <!--================End forgot password Area =================-->
+<!-- 
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--================End login Area =================-->
-        
+            </div> 
+        </section> --> 
+        <!-- ================End login Area =================
+         -->
         <!--================Footer Area =================-->
         <footer class="footer_area">
             <div class="container">
@@ -431,8 +291,11 @@
                         </div>
                     </div>
                 </div>
-            
-  
+                <div class="footer_copyright">
+                    <h5>© <script>document.write(new Date().getFullYear());</script> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</h5>
                 </div>
             </div>
         </footer>
